@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>JOMO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="loginBox" class="card">
+<h2>🔐 تسجيل الدخول</h2>
+<input id="username" placeholder="👤 اسم المستخدم">
+<input id="password" type="password" placeholder="🔑 كلمة المرور">
+<button onclick="login()">دخول</button>
+</div>
+
+<!-- HOME -->
+<div id="home" style="display:none;">
+<div class="navbar">
+<h2>JOMO STORE</h2>
+<div>
+<button onclick="go('add.html')">➕ إضافة</button>
+<button onclick="go('sales.html')">💰 بيع</button>
+<button onclick="go('invoice.html')">🧾 فواتير</button>
+<button onclick="go('search.html')">📦 المخزن</button>
+<button onclick="showProfit()">📊 أرباح</button>
+<button onclick="logout()">🚪 خروج</button>
+</div>
+</div>
+
+<div class="card">
+<h2>أهلاً بيك 👑</h2>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body{
+margin:0;
+font-family:Arial;
+background:#111;
+color:#fff;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:15px;
+background:#000;
+border-bottom:2px solid red;
+}
+
+.card{
+background:#1c1c1c;
+padding:20px;
+margin:20px auto;
+width:90%;
+max-width:500px;
+border-radius:12px;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin:10px 0;
+background:#222;
+color:#fff;
+border:none;
+border-radius:8px;
+}
+
+input:focus,select:focus{
+border:2px solid red;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:10px;
+background:red;
+border:none;
+color:#fff;
+border-radius:8px;
+}
+
+.type-item{
+display:flex;
+justify-content:space-between;
+background:#222;
+padding:8px;
+margin:5px 0;
+border-radius:6px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>فاتورة</title>
+<style>
+body{font-family:Arial;text-align:center}
+.bill{width:300px;margin:auto}
+h2{color:red}
+</style>
+</head>
+
+<body onload="loadPrint()">
+
+<div class="bill">
+<h2>🔥 JOMO STORE 🔥</h2>
+<hr>
+<div id="data"></div>
+<hr>
+<p>شكراً لزيارتك ❤️</p>
+</div>
+
+<script>
+function loadPrint(){
+let inv=JSON.parse(localStorage.getItem("lastInvoice"))||[];
+let html="",total=0;
+
+inv.forEach(i=>{
+total+=i.price;
+html+=`<p>${i.name} - ${i.price}ج</p>`;
+});
+
+html+=`<h3>الإجمالي: ${total}ج</h3>`;
+data.innerHTML=html;
+window.print();
+}
+</script>
+
+</body>
+</html>
